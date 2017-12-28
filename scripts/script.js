@@ -15,23 +15,23 @@ var getLocationData = function(){
             latitude = position.coords.latitude;
             longitude = position.coords.longitude;
             console.log(latitude,longitude);
-            var url= `http://maps.googleapis.com/maps/api/geocode/json?sensor=false&language=en&latlng=${latitude},${longitude}`;
-            $.get(url).done(function(data){
-                //gets the address
-                console.log(data);
-                address=`${data.results[1].address_components[0].long_name},${data.results[1].address_components[1].long_name}`;
+            // var url= `http://maps.googleapis.com/maps/api/geocode/json?sensor=false&language=en&latlng=${latitude},${longitude}`;
+            // $.get(url).done(function(data){
+            //     //gets the address
+            //     console.log(data);
+                // address=`${data.results[1].address_components[0].long_name},${data.results[1].address_components[1].long_name}`;
                 var timeurl=`http://api.timezonedb.com/v2/get-time-zone?key=FL92YD6NC2Z3&format=json&by=position&lat=${latitude}&lng=${longitude}`;
-                $.get(timeurl).done(function(data){
-                    //gets the time of that address
-                    time=data.formatted;
-                    time=changeTimeFormat(time);
+                // $.get(timeurl).done(function(data){
+                //     //gets the time of that address
+                //     time=data.formatted;
+                //     time=changeTimeFormat(time);
                     GetTemperatureData();
-                }).fail(function(e){
-                    alert("Oops some error occured. Try reloading");
-                })
-            }).fail(function(e){
-                alert("Oops some error occured. Try reloading");
-            })
+                // }).fail(function(e){
+                //     alert("Oops some error occured. Try reloading");
+                // })
+            // }).fail(function(e){
+            //     alert("Oops some error occured. Try reloading");
+            // })
         });
     } else {
         
