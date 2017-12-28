@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <script src="jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   <section id="upper-body">
+     <div class="dark-overlay">
+        <div class="container-fluid fullheight" >
+            <div class="row fullheight justify-content-md-between" >
+                <div class="col-md-3 fullheight d-sm-mb-3" >
+                    <div id="body-left">
+                        <div id="header-text">
+                            <h1>Weather<span id="head-text-color">|App</span></h1>
+                        </div>
+                        <div id="button"><!--This appears at down-->
+                           <p id="button-text"><i class="wi wi-day-sunny"></i>   Weather</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="location-information" class="pt-3" >
+                        <p id="location-marker" class="pl-5 pr-0 pb-0 mb-0"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                        <p id="current-location" class="header-text mb-0"></p>
+                        <p id="current-time" class="header-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+   </section>
+
+   <section id="lower-body">
+       <div class="row fullheight">
+           <div class="col-md-6 blue-background fullheight border-right">
+                <div id="lower-first-block" class="pl-5 pt-2">
+                        <p id="giant-text"><span id="temp"></span> &#8451; <span id="weather-icon"></span></p>
+                </div>
+            </div>
+            <div class="col-md-3 blue-background  border-right">
+                <div id="lower-second-block" class="pt-3 ml-5" >
+                    <p id="wind-icon" class="pl-5"></p>
+                    <p class="mediumtext">Wind speed: <span id="wind-speed"></span></p>
+                    <p class="mediumtext">Wind degree: <span id="wind-degree"></span></p>
+                </div>                    
+            </div>
+            <div class="col-md-3 blue-background  border-right">
+                <div id="lower-third-block" class="py-4 ml-5">
+                        <p class="mediumtext">Humidity: <span id="humidity"></span></p>
+                        <p class="mediumtext">Pressure: <span id="pressure"></span></p>
+                        <p class="mediumtext">Sunrise: <span id="sunrise"></span></p>
+                        <p class="mediumtext">Sunset: <span id="sunset"></span></p>
+                        <p class="mediumtext">Max temp: <span id="max-temp"></span></p>
+                       
+                </div>
+            </div>
+
+        </div>  
+   </section>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/paper-full.js"></script>
+</body>
+</html>

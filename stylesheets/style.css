@@ -1,0 +1,125 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    background-image: url("../photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -300px;
+    background-attachment: fixed;
+}
+#upper-body{
+    height: 60%;
+    width: 100%;
+}
+#body-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+#header-text{
+    padding-top: 35px;
+    padding-left: 15px;
+}
+#lower-body{
+    height: 40%;
+}
+#lower-first-block{
+   width: 100%;
+}
+
+.fullheight{
+    height: 100%;
+}
+.blue-background{
+    background-color: #00A8A8;
+}
+#head-text-color{
+    color:#e5ff00;
+}
+#grey-text{
+    color:#9B8D84;
+}
+h1{
+    color:#FFFEF8;   
+}
+.dark-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+#button{
+    background-color: #141819;
+    opacity: 0.6;
+    width: 63%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px #3AC0C1;
+}
+#button-text{
+    color:white;
+    font-size:25px;
+    padding-left: 25px;
+    padding-top: 3px;
+    height: 30px;
+}
+#location-marker{
+    color:white;
+    font-size:80px;
+    text-align: right;
+}
+.header-text{
+    color:white;
+    font-size:25px;
+    text-align: right;
+    font-weight: 500;
+}
+#giant-text{
+    color:white;
+    font-size:130px;
+}
+.mediumtext{
+    color:white;
+    font-size:25px;
+    margin-bottom: 0;
+}
+#wind-icon{
+    color:white;
+    font-size: 80px;
+}
+.border-right{
+    border-right:3px solid rgba(1, 80, 80,0.3);
+}
+@media only screen and (max-width: 500px) {
+    html,body {
+        background-position-y: 0;
+    }
+    #giant-text{
+        font-size: 100px;
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    html,body {
+        background-position-y: 0;
+    }
+    #giant-text{
+        font-size: 70px;
+        margin-bottom: 0;
+    }
+    
+    .mediumtext{
+        font-size:20px;
+    }
+    #wind-icon{
+        padding-left: 5px;
+    }
+    #button{
+        width: 200px;
+    }
+}
